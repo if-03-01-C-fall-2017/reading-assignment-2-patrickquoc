@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<title>Cheat Sheet</title>
+	</head>
+	<body>
+		<h1>
+			Assignment 1
+		</h1>
+		<section>
+			<h1>World Wide Web General</h1>
+			<em>What are the most essential technologies that made the World Wide Web such a success?</em>
+			<p>The essential technologies for the World Wide Web are Uniform Resource Identifier (URI) and HyperText Transfer Protocol (HTTP).</p>
+
+			<em>How are resources (html pages, images, etc) addressed in the web?</em>
+			<p>They are addressed with an URL.</p>
+
+			<em>What are the general components of a url?</em>
+			<p>An URL indicates a protocol (http), a hostname (www.example.com) and a file name(index.html).</p>
+
+			<h1>Web Server</h1>
+			<em>What is a web server?</em>
+			<p>A web server is a computer system that processes requests via HTTP, the basic network protocol used to distribute information on the World Wide Web.</p>
+
+			<em>What does a web server?</em>
+			<p>A web server stores, process and deliever data to clients.</p>
+
+			<em>How can content be stored on a web server?</em>
+			<p>Content are stored on their databases. On the web server is the HTML file which the client can get it that he can see the page.</p>
+
+			<em>How is content in webpages described?</em>
+			<p>The content from webpages is written in the HTML. The client get the static HTML server and the browser</p>
+
+			<h1>Web Client</h1>
+			<em>What is a web client?</em>
+			<p>A web client is a software application. It is commonly referred to as a browser.</p>
+
+			<em>What does a web client?</em>
+			<p>It retrieves, presents and traversing information on the World Wide Web.</p>
+
+			<em>Web Client and Web Browser is the same</em>
+			<p>Yes, they are the same</p>
+
+			<h1>Hello World</h1>
+			<em>What is the html head element?</em>
+			<p>This head element tells the browser that this is an HTML document</p>
+
+			<em>What does <​!DOCTYPE html> mean?</em>
+			<p>This tag let the browser know, which type of document they expect and which version it has.</p>
+
+			<em>What are the two top most elements within the html element?</em>
+			<p><​head> <​body> are the top most used elements.
+
+			<em>How to emphasize a text and how is it displayed in the browser?</em>
+			<p> You can use <​em> to emphasize the text. On the browser the text is cursive.</p>
+
+			<em>How to mark up important ext and how is it displayed in the browser?</em>
+			<p> You can use <​strong> to make the text bold.
+		</section>
+
+		<h1>
+			Assignment 2
+		</h1>
+		<section>
+			<h1>HTML</h1>
+
+			<h2>Basics and Elements</h2>
+			<p>
+				HTML files always starts with <strong><​!DOCTYPE html></strong>. The document itself starts with <strong><​html></strong>. The visible part of the file is the <strong><​body></strong>.<br>
+				Paragraphs are made with <strong><​p></strong> and links with <strong><​a></strong>. You can display preformatted text with <strong><​pre></strong>.<br>
+				Headers are made with <strong><​h1></strong> which is in this case the largest header. For smaller header just change the number to a greater number than 1.<br>
+				You can put images in your document with <strong><​img></strong>. For example: <em><​img src="example.jpg" width="200" height="200"></em><br>
+				The picture will look like this.
+			</p>
+			<img src="example.jpg" width="200" height="200"/>
+
+			<h2>Attributes</h2>
+			<p>
+				All HTML elements can have attributes. Attributes provide additional information about a element.<br>
+				Attributes are always specified in the start tag.<br>
+			  Attributes usually come in name/value pairs like: name="value"
+			</p>
+			<h3>Here are some important attributes:</h3>
+			<p>
+				<strong>href</strong>: The link address in a <​a> element is specified in the href attribute: <em><​a href="https://www.Example.com">This is a link<​/a></em><br>
+				<strong>src</strong>: The filename of the image source is specified in the src attribute: <em><​img src="example.jpg"></em><br>
+				<strong>width/height</strong>: These elements sets the size of the image: <em><​img src="example.jpg" width="200" height="200"></em><br>
+				<strong>alt</strong>: The alt attribute specifies an alternative text to be used, when an image cannot be displayed: <em><​img src="example.jpg" alt="This is an example"></em><br>
+				<strong>style</strong>: The style attribute is used to specify the styling of an element, like color, font, size etc.: <em> <​p style="color:red">I am a paragraph<​/p></em><br>
+				<strong>lang</strong>:  This declares the language. This is important for accessibility application and search engines.: <em><​html lang="en-US"></em><br>
+				<strong>title</strong>: The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph: <em><​p title="I'm a tooltip"></em><br>
+			</p>
+
+			<h2>Comments</h2>
+			<p>
+				You can use comments to describe your code, for notifications and reminders and it is a great way for debugging a code. Comments are not displayed in the browser.<br>
+				Example: <em><​!-- Your Comment --></em><br>
+				There is also conditional comments but it can be only executed by Internet Explorer.<br>
+				Example:<br>
+				<em>
+						<​!--[if IE 9]><br>
+    				.... some HTML here ....<br>
+						<​![endif]-->
+				</em>
+			</p>
+
+			<h2>Links</h2>
+			<p>
+				Links are made with the <​a> element.<br>
+				The href attribute specifies the destination address of the link. It can be a full web address or a local link.<br>
+				The link text is the visible part of the element.
+				The <storng>target</strong> attribute specifies where to open the linked document. The target attribute can have one of the following values:<br>
+    		<strong>_blank</strong> - Opens the linked document in a new window or tab<br>
+    		<strong>_self</strong> - Opens the linked document in the same window/tab as it was clicked (this is default)<br>
+    		<strong>_parent</strong> - Opens the linked document in the parent frame<br>
+    		<strong>_top</strong> - Opens the linked document in the full body of the window<br>
+    		<strong>framename</strong> - Opens the linked document in a named frame<br>
+				Example: <em><​a href="https://www.example.com/" target="_blank">This opens a new tab with the website.<​/a></em>
+			</p>
+
+			<h2>Images</h2>
+			<p>
+				The <strong>style</strong> attribute is important for preventing internal or external style sheets from changing the original size of images. For Example: <em><​style> img {width:100%;}<​/style></em><br>
+				You can find <strong>images in another folder</strong> by giving the correct path of the images: <em><​img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"> </em><br>
+				If you want to take a picture from the internet, just put your link in src.<br>
+				You can also use animated pictures like gifs on your site. Just pick a .gif file and your good to go.
+			</p>
+
+			<h2>Head</h2>
+			<p>
+				The <strong><​head></strong> element is a container for metadata (data about data) and is placed between the <​html> tag and the <​body> tag. <br>
+				HTML metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, links, scripts, and other meta information.<br>
+				The following tags describe metadata: <strong><​​title>, <​​style>, <​​meta>, <​​link>, <​​script>,</strong> and <strong><​​base></strong>.<br>
+				The <strong><​​title></strong> element defines the title of the document. It defines the title of the browser tab, provides a title when added to the favourites and displays the title in the search engine.<br>
+				The <strong><​​meta></strong> element is used to specify which character set is used, page description, keywords, author, and other metadata.
+			</p>
+
+			<h1>CSS</h1>
+
+			<h2>Syntax</h2>
+			<p>
+				A CSS rule-set consists of a selector and a declaration block. First comes the selector then the declaration.<br>
+			  Inside the declaration comes the property then the value.
+			</p>
+
+			<h2>Selectors</h2>
+			<p>
+				CSS selectors are used to select HTML elements based on their element name, id, class, attribute, and more.<br>
+				If you have elements with same style definitions you can group selectors by seperating the elements with a comma.
+			</p>
+
+			<h2>Comments</h2>
+			<p>
+				Comments helps the coder to understand the code at a later date.
+				Comments are done like this <em>/* Example text */</em>
+			</p>
+
+			<h2>Colors</h2>
+			<p>
+				HTML colors can be specified using predefined color names, RGB, HEX, HSL, RGBA, and HSLA values.<br>
+				There are 140 standard color names in HTML. (e.g. Tomato, Orange, Violet,...)<br>
+				In HTML, a color can be specified using a hexadecimal value in the form: <em>#rrggbb</em>
+				The highest value (for example red) is <strong>ff</strong>.
+			</p>
+
+			<h2>Background</h2>
+			<p>
+				The <strong>background-color</strong> property specifies the background color of an element.<br>
+				You can change the background repeat vertically/horizontally by using <em>background-repeat: repeat-x;</em>. If you don't like to repeat it use <em>no-repeat</em> instead of <em>repeat-x</em>.<br>
+				If you want the background fixed on a position use <em>background-attachment: fixed;</em>.
+			</p>
+
+			<h2>Text</h2>
+			<p>
+				The <em>color</em> property is used to set the color of the text. You are able to do this on links too.<br>
+				The <em>text-align</em> property is used to set the horizontal alignment of a text.<br>
+				The <em>text-decoration</em> property is used to set(e.g. underline) or remove decorations from text.<br>
+				The <em>text-transform</em> property is used to specify uppercase and lowercase letters in a text.<br>
+			</p>
+
+			<h2>Fonts</h2>
+			<p>
+				Serif fonts have small lines at the ends on some characters, which Sans-Serif ("Sans" means without) doesn't have these lines.<br>
+				The <strong>font family</strong> of a text is set with the font-family property. Example: <em>p { font-family: "Times New Roman", Times, serif; }</em><br>
+				You can set the font size pixels(<em>font-size=40px;</em>) or Em(<em>font-size=2.5em;</em>).<br>
+				The font-weight property specifies the weight of a font: <em>p.thick{font-weight: bold}</em>
+			</p>
+			<h2>Combinators</h2>
+			<p>
+				Between selectors, we can include a combinator. There are 4 diffrent combinators in CSS3: <strong>descendant(space), child(>), adjacant sibling(+)</strong> and <strong>general sibling(~)</strong> selector.
+			</p>
+			<h2>Pseudo Classes</h2>
+			<p>
+				A pseudo-class is used to define a special state of an element. It can be used to different unvisited and visited links, style an element when a mouse hovers over it or when it gets on focus.<br>
+				The syntax looks like this: <em>selector:pseudo-class { property:value; }</em><br>
+				The <em>:first-child pseudo-class</em> matches a specified element that is the first child of another element.
+			</p>
+		</section>
+	</body>
+</html>
